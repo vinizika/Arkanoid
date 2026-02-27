@@ -6,20 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/InitialScene.unity
+    guid: dcce57bcd4d034e29947ad23d8f636bd
   - enabled: 1
     path: Assets/Scenes/Fase1.unity
     guid: 6416e29a302a449cab3a2167743b8218
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: c9d5d6bd2f14740638346ea8304fbbfc
-  - enabled: 1
-    path: Assets/Scenes/InitialScene.unity
-    guid: dcce57bcd4d034e29947ad23d8f636bd
-  - enabled: 1
     path: Assets/Scenes/Fase2.unity
     guid: 7c1a3d587ae454590aaffa045481a4a8
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: c9d5d6bd2f14740638346ea8304fbbfc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -5,7 +5,6 @@ public class BallControl : MonoBehaviour
     public float initialSpeed = 6f;
     public Transform paddle;
     public float offsetY = 0.6f;
-    public GameManager gm;
 
     private Rigidbody2D rb;
     private bool launched = false;
@@ -18,7 +17,7 @@ public class BallControl : MonoBehaviour
 
     void Update()
     {
-        if (gm != null && gm.gameOver) return; // trava tudo
+        if (GameManager.instance.gameOver) return; // trava tudo
 
         if (!launched)
         {
@@ -50,7 +49,7 @@ public class BallControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Brick"))
         {
             Destroy(collision.gameObject);
-            gm.AddPoint();
+            GameManager.instance.AddPoint();
         }
     }
 }

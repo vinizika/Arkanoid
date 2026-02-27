@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
         GameObject[] bricks = GameObject.FindGameObjectsWithTag("Brick");
         if (bricks.Length == 0)
         {
-            if (winWhenFinished && GameManager.instance != null)
+            if (winWhenFinished)
                 GameManager.instance.WinGame();
             else
                 SceneManager.LoadScene(nextSceneName);

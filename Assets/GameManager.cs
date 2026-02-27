@@ -48,14 +48,14 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         playerWon = true;
-        SceneManager.LoadScene("Final");     // vitória vai pra Final
+        SceneManager.LoadScene("Final");
     }
 
     public void LoseGame()
     {
         gameOver = true;
         playerWon = false;
-        SceneManager.LoadScene("GameOver");  // derrota vai pra GameOver
+        SceneManager.LoadScene("GameOver");
     }
 
     void OnGUI()

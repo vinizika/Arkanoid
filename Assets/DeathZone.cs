@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    public BallControl ball;
-    public GameManager gm;
-
     void Start() { }
     void Update() { }
 
@@ -12,12 +9,11 @@ public class DeathZone : MonoBehaviour
     {
         if (other.CompareTag("Ball"))
         {
-            if (gm != null)
-            {
-                gm.LoseLife();
-                if (gm.gameOver) return;
-            }
-            ball.ResetBall();
+            GameManager.instance.LoseLife();
+
+            BallControl bc = other.GetComponent<BallControl>();
+            if (bc != null && (GameManager.instance == null || !GameManager.instance.gameOver))
+                bc.ResetBall();
         }
     }
 }

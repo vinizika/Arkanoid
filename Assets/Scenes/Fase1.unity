@@ -475,7 +475,6 @@ MonoBehaviour:
   initialSpeed: 6
   paddle: {fileID: 45418697}
   offsetY: 0.6
-  gm: {fileID: 1013606016}
 --- !u!50 &609364488
 Rigidbody2D:
   serializedVersion: 5
@@ -1043,6 +1042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6638ad580457443b9b0aec676297badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  nextSceneName: Fase2
+  winWhenFinished: 0
 --- !u!4 &1108205273
 Transform:
   m_ObjectHideFlags: 0
@@ -1364,8 +1365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b538e2b87244252bb658dde273e6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  ball: {fileID: 609364487}
-  gm: {fileID: 1013606016}
 --- !u!61 &1508655243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1513,7 +1512,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
