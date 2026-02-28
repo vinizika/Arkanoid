@@ -21,7 +21,7 @@ public class WinUI : MonoBehaviour
         if (GUI.Button(new Rect(20, 150, 200, 40), "Reiniciar"))
         {
             Destroy(GameManager.instance.gameObject);
-            SceneManager.LoadScene("Fase1");
+            SceneManager.LoadScene("InitialScene");
         }
     }
 }

@@ -44,6 +44,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void AddLife()
+    {
+        if (gameOver) return;
+        lives += 1;
+    }
+
     public void WinGame()
     {
         gameOver = true;

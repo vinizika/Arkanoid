@@ -51,5 +51,11 @@ public class BallControl : MonoBehaviour
             Destroy(collision.gameObject);
             GameManager.instance.AddPoint();
         }
+        else if (collision.gameObject.CompareTag("LifeBrick"))
+        {
+            Destroy(collision.gameObject);
+            GameManager.instance.AddPoint(); 
+            GameManager.instance.AddLife();  
+        }
     }
 }
