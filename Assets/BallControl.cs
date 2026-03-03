@@ -57,7 +57,7 @@ public class BallControl : MonoBehaviour
         // 4. Reseta o TAMANHO da Raquete
         if (paddle != null)
         {
-            paddle.localScale = new Vector3(1f, 1f, 1f);
+            paddle.localScale = new Vector3(1f, 1f, 1f); 
         }    
         
         // Opcional: Se você quiser que a bolinha pare de se mover imediatamente
