@@ -47,7 +47,7 @@ public class BallControl : MonoBehaviour
     {
         // 1. Tira uma vida do jogador
         GameManager.instance.LoseLife(); 
-
+ 
         // 2. Reseta a bolinha (usa a função que você já tem)
         ResetBall(); 
 
